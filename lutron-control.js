@@ -10,7 +10,7 @@ module.exports = function (RED) {
             if (!isNaN(msg.payload)) {
                 configNode.sendLutronCommand(this.devId, msg.payload);
             } else {
-                console.log('Error could not converted input value to number val=' + msg.paylaod);
+                console.log('Error could not converted input value to number val=' + msg.payload);
             }
         })
     }
